@@ -1,0 +1,31 @@
+.star::after {
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: rgb(41, 113, 118);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.star::before {
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: rgb(41, 113, 118);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.str {
+  font-size: 1rem;
+  color: gold;
+}
+
+.baheeg {
+  color: rgb(41, 113, 118);
+}
+
+.bg-baheeg {
+  background-color: rgb(41, 113, 118);
+}

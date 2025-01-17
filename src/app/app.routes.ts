@@ -7,6 +7,7 @@ import { MealComponent } from './meal/meal.component';
 import { SeaFoodComponent } from './sea-food/sea-food.component';
 import { PastaComponent } from './pasta/pasta.component';
 import { BreakFastComponent } from './break-fast/break-fast.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,12 +18,14 @@ export const routes: Routes = [
     component: MealComponent,
     title: 'Meals',
     children: [
+      { path: '', redirectTo: 'seafood', pathMatch: 'full' },
       { path: 'pasta', component: PastaComponent, title: 'Pasta' },
       { path: 'seafood', component: SeaFoodComponent, title: 'SeaFood' },
       { path: 'breakfast', component: BreakFastComponent, title: 'Breakfast' },
+      { path: '**', component: NotFoundComponent, title: 'Not found Page' },
     ],
   },
   { path: 'team', component: TeamComponent, title: 'team' },
   { path: 'contacts', component: ContactsComponent, title: 'Contact' },
-  // { path: 'contacts', component: ContactsComponent, title: 'Contact' },
+  { path: '**', component: NotFoundComponent, title: 'Not found Page' },
 ];
