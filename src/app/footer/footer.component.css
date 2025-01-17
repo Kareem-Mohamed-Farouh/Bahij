@@ -1,0 +1,13 @@
+footer span a {
+  color: white;
+}
+footer .footer-icon span {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: solid white 2px;
+}
