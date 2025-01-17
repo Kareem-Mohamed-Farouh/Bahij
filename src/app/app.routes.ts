@@ -22,7 +22,7 @@ export const routes: Routes = [
       { path: 'pasta', component: PastaComponent, title: 'Pasta' },
       { path: 'seafood', component: SeaFoodComponent, title: 'SeaFood' },
       { path: 'breakfast', component: BreakFastComponent, title: 'Breakfast' },
-      { path: '**', component: NotFoundComponent, title: 'Not found Page' },
+      { path: '**', component: NotFoundComponent, title: 'Not found ' },
     ],
   },
   { path: 'team', component: TeamComponent, title: 'team' },
