@@ -1,0 +1,12 @@
+@for (meal of seafoodData ; track $index) {
+<div class="card h-100">
+    <img class="card-img-top" [src]="meal.strMealThumb" alt="Title" />
+    <div class="card-body h-100">
+        <h4 class="card-title"> {{meal.strMeal}} </h4>
+        <p class="card-text">{{meal.Desc}}</p>
+
+    </div>
+</div>
+
+
+}
