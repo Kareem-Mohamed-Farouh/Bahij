@@ -1,21 +1,4 @@
 <div class="container py-4 ">
-    <div class="row g-3">
+    <app-card-meal [Data]="seafood"></app-card-meal>
 
-        <!-- @for (meal of seafoodData ; track $index) { -->
-        @for (meal of seafood ; track $index) {
-        <div class="col-md-3">
-            <div class="card h-100">
-                <img class="card-img-top" [src]="meal.strMealThumb" alt="Title" />
-                <div class="card-body h-100">
-                    <h4 class="card-title"> {{meal.strMeal}} </h4>
-                    <p class="card-text">{{meal.Desc}}</p>
-
-                </div>
-            </div>
-
-
-        </div>
-
-        }
-    </div>
 </div>

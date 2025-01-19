@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CardMealComponent } from '../card-meal/card-meal.component';
 interface IMeals {
   strMeal: string;
   strMealThumb: string;
@@ -7,12 +8,11 @@ interface IMeals {
 }
 @Component({
   selector: 'app-pasta',
-  imports: [],
+  imports: [CardMealComponent],
   templateUrl: './pasta.component.html',
   styleUrl: './pasta.component.css',
 })
 export class PastaComponent {
-  @Input() pastaData!: IMeals[];
   pasta: IMeals[] = [
     {
       strMeal: 'Chilli prawn linguine',

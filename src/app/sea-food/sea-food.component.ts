@@ -1,5 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { CardMealComponent } from '../card-meal/card-meal.component';
 // import { IMeals } from './models/dataMeals.interface';
 
 interface IMeals {
@@ -10,14 +11,11 @@ interface IMeals {
 }
 @Component({
   selector: 'app-sea-food',
-  imports: [RouterLink],
+  imports: [RouterLink, CardMealComponent],
   templateUrl: './sea-food.component.html',
   styleUrl: './sea-food.component.css',
 })
 export class SeaFoodComponent {
-  // @Input() seafoodData!: IMeals[];
-  seafoodData!: IMeals[];
-
   seafood: IMeals[] = [
     {
       strMeal: 'Baked salmon with fennel & tomatoes',

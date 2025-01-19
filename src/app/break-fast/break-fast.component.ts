@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { CardMealComponent } from '../card-meal/card-meal.component';
 interface IMeals {
   strMeal: string;
   strMealThumb: string;
@@ -8,13 +9,11 @@ interface IMeals {
 }
 @Component({
   selector: 'app-break-fast',
-  imports: [],
+  imports: [CardMealComponent],
   templateUrl: './break-fast.component.html',
   styleUrl: './break-fast.component.css',
 })
 export class BreakFastComponent {
-  // @Input() breakFastData!: IMeals[];
-
   breakFast: IMeals[] = [
     {
       strMeal: 'Bread omelette',

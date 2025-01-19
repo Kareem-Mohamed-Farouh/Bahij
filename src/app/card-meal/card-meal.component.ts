@@ -12,5 +12,5 @@ interface IMeals {
   styleUrl: './card-meal.component.css',
 })
 export class CardMealComponent {
-  @Input() seafoodData!: IMeals[];
+  @Input() Data!: IMeals[];
 }
