@@ -18,10 +18,11 @@
 
 </div>
 
-<h2 class="bg-white fw-bolder text-center   mx-auto py-4 my-4 rounded-4"> Recomended Meal For You
+<h2 #el class="bg-white fw-bolder text-center   mx-auto py-4 my-4 rounded-4"> Recomended Meal For You
 </h2>
-@defer ( on viewport) {
+@defer ( on viewport(el)) {
 <app-recommended [Datarecomnded]="Data"></app-recommended>
-}@placeholder {
-<p class="h1 text-warning">loding Recomendation Meals....</p>
 }
+<!-- @placeholder {
+<p class="h1 text-warning">loding Recomendation Meals....</p>
+} -->
