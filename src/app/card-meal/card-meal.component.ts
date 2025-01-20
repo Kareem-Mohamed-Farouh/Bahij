@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { RecommendedComponent } from '../recommended/recommended.component';
 interface IMeals {
   strMeal: string;
   strMealThumb: string;
@@ -7,7 +8,7 @@ interface IMeals {
 }
 @Component({
   selector: 'app-card-meal',
-  imports: [],
+  imports: [RecommendedComponent],
   templateUrl: './card-meal.component.html',
   styleUrl: './card-meal.component.css',
 })

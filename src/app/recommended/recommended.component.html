@@ -1,0 +1,22 @@
+<div class="container bg-white rounded-3">
+    <div class="row g-3   ">
+        @for (recomendation of Datarecomnded ; track $index) {
+        @if($odd){
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img class="card-img-top" [src]="recomendation.strMealThumb" alt="Title" />
+                <div class="card-body h-100">
+                    <h4 class="card-title"> {{recomendation.strMeal}} </h4>
+                    <p class="card-text">{{recomendation.Desc}}</p>
+                </div>
+            </div>
+        </div>
+        }
+
+
+
+        }
+
+
+    </div>
+</div>
