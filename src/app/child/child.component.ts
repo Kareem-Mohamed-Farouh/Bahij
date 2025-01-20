@@ -12,14 +12,5 @@ export class ChildComponent {
 
   DataShot() {
     this.childTParentData.emit(this.disappeer);
-    // document.getElementById('dd')?.classList.toggle('d-none');
-    document.getElementById('pp')?.classList.toggle('d-none');
   }
-
-  // Disappear() {
-  //   if (this.disappeer == 'disappeer') {
-  //     document.getElementById('dd')?.classList.toggle('d-none');
-  //     document.getElementById('pp')?.classList.toggle('d-none');
-  //   }
-  // }
 }

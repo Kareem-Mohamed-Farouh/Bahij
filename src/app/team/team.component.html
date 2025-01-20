@@ -21,8 +21,12 @@
             libero sequi, quibusdam distinctio voluptates, modi dolores vel a? Cumque rem vel libero natus
             distinctio
             fugiat consectetur aperiam voluptatem placeat</p>
-        <div id="pp" class="d-none text-center text-capitalize">
-            <p class="  h1 text  bg-danger text-white"> {{"disappeared by add class "+ disappeerdata}}</p>
+        <div id="pp" class="py-2 bg-info text-center text-capitalize">
+            <p class="  h1 text   text-white"> <span><i class=" text-dark fa-solid fa-ghost"></i></span>
+                <span><i class=" mx-5 fa-solid fa-ghost"></i></span><span><i
+                        class=" text-dark fa-solid fa-ghost"></i></span>
+                <!-- {{disappeerdata}} -->
+            </p>
         </div>
         <div id="dd" [class]="disappeerdata" class="display-content mx-auto w-75 text-center">
             <img src="/images/Abo Ali Sea food .png" class="w-25" alt="">
@@ -40,7 +44,8 @@
                 non quos numquam corporis impedit ea consectetur nam, suscipit esse</p>
         </div>
         <div>
-            <app-child (childTParentData)="disappeerdata=$event"></app-child>
+            <!-- <app-child (childTParentData)="disappeerdata=$event"></app-child> -->
+            <app-child (childTParentData)="test($event)"></app-child>
         </div>
 
     </div>

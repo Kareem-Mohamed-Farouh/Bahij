@@ -9,4 +9,11 @@ import { ChildComponent } from '../child/child.component';
 })
 export class TeamComponent {
   disappeerdata: string = '';
+
+  test(data: string) {
+    this.disappeerdata = data;
+    document.getElementById('pp')?.classList.toggle('bg-danger');
+
+    document.getElementById('dd')?.classList.toggle(this.disappeerdata);
+  }
 }
