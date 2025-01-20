@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
+import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-team',
-  imports: [],
+  imports: [ChildComponent],
   templateUrl: './team.component.html',
   styleUrl: './team.component.css',
 })
 export class TeamComponent {
-  Disappear(display: HTMLDivElement) {
-    display.classList.add('d-none');
-  }
+  disappeer: string = '';
 }

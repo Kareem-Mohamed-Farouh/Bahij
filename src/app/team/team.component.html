@@ -2,7 +2,8 @@
     <header class="text-center bg-dark text-white fs-5 w-100">Hello from Team Component
         <hr>
     </header>
-
+    <div>
+    </div>
     <div class="team-content">
         <p class="fs-5 fw-bolder text-center">
             Hi I'm the Team Parent Component <span><i class="fa-solid fa-hand"></i></span> and I Have A Child Called
@@ -13,16 +14,18 @@
             explicabo
             praesentium repellat
             commodi cumque nihil est modi ipsam itaque doloremque, assumenda dolorum veniam sequi illo corporis
-            excepturi soluta eligendi molestias, et quae dolore odit doloribus? Corrupti inventore beatae odio sint
-            reiciendis iusto debitis repellendus magni illo officiis error dicta dignissimos laboriosam, tenetur ab
-            impedit, consectetur voluptatum omnis quibusdam rem deserunt. Totam expedita incidunt quis iste,
+            excepturi soluta eligendi molestias, et quae dolore odit doloribus? Corrupti indus magni illo officiis error
+            dicta dignissimos laboriosam, tenetur ab
             consequuntur ratione atque blanditiis, eum in veritatis non eligendi? Nulla asperiores, esse tempore
             aliquam
             libero sequi, quibusdam distinctio voluptates, modi dolores vel a? Cumque rem vel libero natus
             distinctio
             fugiat consectetur aperiam voluptatem placeat</p>
-        <div #display class="display-content mx-auto w-75 text-center">
-            <img src="/images/Seafood logo (Baheeg)_1736980767494.jpeg" class="w-25" alt="">
+        <div id="pp" class="d-none text-center text-capitalize">
+            <p class="  h1 text  bg-danger text-white"> {{ disappeer}}</p>
+        </div>
+        <div id="dd" class="display-content mx-auto w-75 text-center">
+            <img src="/images/Abo Ali Sea food .png" class="w-25" alt="">
             <p class="text-center">quaerat temporibus harum hic! Officiis, natus? Cupiditate ducimus esse velit
                 consectetur sapiente non
                 veritatis quidem error, atque architecto fuga delectus voluptatem iste aliquid culpa minima magni
@@ -36,13 +39,10 @@
                 ipsam
                 non quos numquam corporis impedit ea consectetur nam, suscipit esse</p>
         </div>
+        <div>
+            <app-child (childTParentData)="disappeer=$event"></app-child>
+        </div>
 
     </div>
-    <div class="Child w-50 mx-auto bg-info text-center p-3">
-        <p class="fs-3">Let's introduce Me
-        </p>
-        <p>I'm the Child Component "Supervisor" amis To Control the <span class="text-danger">Red Area</span> located on
-            My PArent</p>
-        <button (click)="Disappear(display)" class="bg-black text-white btn">Click me to send my data to parent</button>
-    </div>
+
 </div>

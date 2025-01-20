@@ -1,5 +1,4 @@
-<div #hmada class="row g-3   ">
-
+<div class="row g-3   ">
     @for (meal of Data ; track $index) {
     <div class="col-md-3">
         <div class="card h-100">
@@ -7,22 +6,19 @@
             <div class="card-body h-100">
                 <h4 class="card-title"> {{meal.strMeal}} </h4>
                 <p class="card-text">{{meal.Desc}}</p>
-
             </div>
         </div>
     </div>
-
-
     }
-
-
 </div>
-
-<h2 #el class="bg-white fw-bolder text-center   mx-auto py-4 my-4 rounded-4"> Recomended Meal For You
-</h2>
-@defer ( on viewport(el)) {
+<h2 #el class="bg-white fw-bolder text-center   mx-auto py-4 my-4 rounded-4"> Recomended Meal For You</h2>
+@defer ( on viewport(el))
+{
 <app-recommended [Datarecomnded]="Data"></app-recommended>
 }
+
+<!-- with one parent element -->
 <!-- @placeholder {
+ 
 <p class="h1 text-warning">loding Recomendation Meals....</p>
 } -->
