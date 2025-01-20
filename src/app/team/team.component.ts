@@ -8,5 +8,5 @@ import { ChildComponent } from '../child/child.component';
   styleUrl: './team.component.css',
 })
 export class TeamComponent {
-  disappeer: string = '';
+  disappeerdata: string = '';
 }
